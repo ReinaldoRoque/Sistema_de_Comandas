@@ -6,7 +6,7 @@
     if ($conexao->connect_error) {
         die("Connection failed: " . $conexao->connect_error);
     }
-    $sql = "UPDATE usuario SET nome = '" . $_POST['txtNome'] . "', senha = '" . $_POST['txtSenha'] . "' WHERE id_usuario =" . $_POST['txtID'] . ";";
+    $sql = "UPDATE usuario SET nome = '" . $_POST['txtNome'] . "', senha = '" . $_POST['txtSenha'] . "', fk_tipo_usuario = '" . $_POST['txtTipoUsuario'] . "' WHERE id_usuario =" . $_POST['txtID'] . ";";
     if ($conexao->query($sql) === TRUE) {
         echo ' <a href="listar.php"> <h1 class="w3-button w3-black">Usuário Atualizado com sucesso! </h1> </a> ';
         $id = mysqli_insert_id($conexao);

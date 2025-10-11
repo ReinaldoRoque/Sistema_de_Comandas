@@ -1,7 +1,7 @@
 <?php require_once('verificarAcesso.php'); ?>
 <?php require_once('cabecalho.php'); ?>
-<a href="principal.php" class="w3-display-topleft">
-    <i class="fa fa-arrow-circle-left w3-large w3-black w3-button w3-xxlarge"></i> </a>
+<a href="principal.php" class="w3-display-topleft w3-margin">
+    <i class="fa fa-arrow-circle-left  w3-large w3-grey w3-hover-black w3-button w3-xxlarge"></i> </a>
 <div class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-middle">
     <h1 class="w3-center w3-black w3-round-large w3-margin">Cadastro de Usuário</h1>
     <form action="cadastroAction.php" class="w3-container" method='post'>

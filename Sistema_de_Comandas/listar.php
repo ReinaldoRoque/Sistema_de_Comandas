@@ -19,7 +19,7 @@ if ($resultado != null)
         echo '<td>' . str_repeat('•', min(strlen($linha['senha']), $max_bolinhas)) . '</td>';
         echo '<td >' . $linha['tipo_usuario'] . '</td>';
         echo '<td><a href="atualizar.php?id=' . $linha['id_usuario'] . '&nome=' . $linha['nome'] . '&senha=' . $linha['senha'] . '&tipo=' . $linha['fk_tipo_usuario'] . '"><i class="fa fa-refresh w3-large w3-text-black""></i></a></td></td>';
-        echo '<td><a href="excluir.php?id=' . $linha['id_usuario'] . '&nome=' . $linha['nome'] . '"><i class="fa fa-user-times w3-large w3-text-black"></i> </a></td></td>';
+        echo '<td><a href="excluir.php?id=' . $linha['id_usuario'] . '&nome=' . $linha['nome'] . '&tipo=' . $linha['tipo_usuario'] . '"><i class="fa fa-user-times w3-large w3-text-black"></i> </a></td></td>';
 
         echo '</tr>';
     }

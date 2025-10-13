@@ -6,11 +6,11 @@
     if ($conexao->connect_error) {
         die("Connection failed: " . $conexao->connect_error);
     }
-    $sql = "DELETE FROM amigo WHERE idamigo = '" . $_POST['txtID'] . "';";
+    $sql = "UPDATE usuario SET excluido = '1' WHERE id_usuario =" . $_POST['txtID'] . ";";
     if ($conexao->query($sql) === TRUE) {
-        echo ' <a href="listar.php"> <h1 class="w3-button w3-teal">Amigo Excluido com sucesso! </h1> </a> ';
+        echo ' <a href="listar.php"> <h1 class="w3-button w3-black">Usuário Excluido com sucesso! </h1> </a> ';
     } else {
-        echo ' <a href="listar.php"> <h1 class="w3-button w3-teal">ERRO! </h1> </a> ';
+        echo ' <a href="listar.php"> <h1 class="w3-button w3-red">ERRO! </h1> </a> ';
     }
     $conexao->close(); ?>
 </div>

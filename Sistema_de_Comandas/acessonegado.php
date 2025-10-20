@@ -5,7 +5,7 @@
 <a href="index.php">
 <h1 class="w3-button w3-red">Acesso NEGADO! </h1>
 <br>
-<h2 class="w3-button w3-black">É necessária a Realização do Login Inválido! </h2>
+<h2 class="w3-button w3-black">É necessária a Realização do Login Válido! </h2>
 </a> ';
     ?>
 </div>

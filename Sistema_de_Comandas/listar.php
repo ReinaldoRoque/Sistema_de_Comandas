@@ -8,7 +8,7 @@ if ($conexao->connect_error) {
     die("Connection failed: " . $conexao->connect_error);
 }
 echo ' <div class="w3-paddingw3-content w3-half w3-display-topmiddle w3-margin"> <h1 class="w3-center w3-black w3-round-large w3-margin">Listagem de Usuário</h1> <table class="w3-table-all w3-centered"> <thead> <tr class="w3-center w3-black"> <th>ID_Usuário</th> <th>Usuário</th> <th>Senha</th> <th>Tipo</th> <th>Alterar</th> <th>Excluir</th> </tr> <thead> ';
-$sql = "SELECT u.id_usuario, u.nome, u.senha, u.excluido, u.fk_tipo_usuario, t.tipo AS tipo_usuario FROM usuario AS u INNER JOIN tipo_usuario AS t ON u.fk_tipo_usuario = t.id_tipo_usuario WHERE u.excluido <> 1;";
+$sql = "SELECT u.id_usuario, u.nome, u.senha, u.excluido, u.fk_tipo_usuario, t.tipo AS tipo_usuario FROM usuario AS u INNER JOIN tipo_usuario AS t ON u.fk_tipo_usuario = t.id_tipo_usuario WHERE u.excluido <> 1 ORDER BY u.id_usuario ASC;";
 $resultado = $conexao->query($sql);
 if ($resultado != null)
     foreach ($resultado as $linha) {

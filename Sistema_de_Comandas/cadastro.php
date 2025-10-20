@@ -27,7 +27,8 @@
                         ?>
                 </select>
                 <br>
-                <button name="btnAdicionar" class="w3-button w3-black w3-cell w3-round-large w3-right w3-margin-right">
+                <button name="btnAdicionar" onclick="document.getElementById('id01').style.display='block'"
+                    class="w3-button w3-black w3-cell w3-round-large w3-right w3-margin-right">
                     <i class="w3-xxlarge fa fa-user-plus"></i> Adicionar </button>
             </form>
 

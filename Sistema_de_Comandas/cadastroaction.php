@@ -8,7 +8,6 @@
     }
     $sql = "INSERT INTO usuario (nome, senha, fk_tipo_usuario) VALUES ('" . $_POST['txtNome'] . "', '" . $_POST['txtSenha'] . "', '" . $_POST['txtTipoUsuario'] . "')";
     if ($conexao->query($sql) === TRUE) {
-        // echo ' <a href="principal.php"> <h1 class="w3-button w3-black">Usuário Salvo com sucesso! </h1> </a> ';
         header("Location: principal.php?cadastro=ok");
         exit();
     } else {

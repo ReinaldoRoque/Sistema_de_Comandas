@@ -30,7 +30,9 @@
                         ?>
                 </select>
                 <br>
-                <button name="btnAtualizar" class="w3-button w3-black w3-cell w3-round-large w3-right">
+                <a href="listar.php" class="w3-button w3-black w3-cell w3-round-large w3-left w3-xlarge">
+                    <i class="fa fa-ban w3-xxlarge"></i> Cancelar </a>
+                <button name="btnAtualizar" class="w3-button w3-black w3-cell w3-round-large w3-right w3-xlarge">
                     <i class="w3-xxlarge fa fa-refresh"></i> Atualizar </button>
             </form>
         </div>

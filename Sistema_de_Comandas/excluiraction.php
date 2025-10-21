@@ -8,7 +8,8 @@
     }
     $sql = "UPDATE usuario SET excluido = '1' WHERE id_usuario =" . $_POST['txtID'] . ";";
     if ($conexao->query($sql) === TRUE) {
-        echo ' <a href="listar.php"> <h1 class="w3-button w3-black">Usuário Excluido com sucesso! </h1> </a> ';
+        header("Location: listar.php?excluido=ok");
+        exit();
     } else {
         echo ' <a href="listar.php"> <h1 class="w3-button w3-red">ERRO! </h1> </a> ';
     }

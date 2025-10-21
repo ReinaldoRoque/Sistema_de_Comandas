@@ -27,8 +27,10 @@
                         ?>
                 </select>
                 <br>
+                <a href="principal.php" class="w3-button w3-black w3-cell w3-round-large w3-left w3-xlarge">
+                    <i class="fa fa-ban w3-xxlarge"></i> Cancelar </a>
                 <button name="btnAdicionar" onclick="document.getElementById('id01').style.display='block'"
-                    class="w3-button w3-black w3-cell w3-round-large w3-right w3-margin-right">
+                    class="w3-button w3-black w3-cell w3-round-large w3-right w3-xlarge">
                     <i class="w3-xxlarge fa fa-user-plus"></i> Adicionar </button>
             </form>
 

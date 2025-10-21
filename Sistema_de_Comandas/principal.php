@@ -17,7 +17,7 @@
 </div>
 <div id="meuModal" class="w3-modal w3-center" style="background-color: transparent;  pointer-events: none;">
     <div class="w3-modal-content w3-animate-bottom" style=" pointer-events: all;
-        margin: 0; position: fixed; bottom: 20px; right: 20px; width: auto; min-width: 300px;">
+        margin: 0; position: fixed; bottom: 20px; right: 20px; width: 250px; min-width: auto;">
         <header class="w3-container w3-black">
             <spam class="">
                 <h3>Cadastro de Usuário</h3>
@@ -38,7 +38,7 @@
     }
     function fecharModal() {
         document.getElementById('meuModal').style.display = 'none';
-        // 🔸 Remove o parâmetro "cadastro" da URL sem recarregar a página
+        // Remove o parâmetro "cadastro" da URL sem recarregar a página
         if (window.history.replaceState) {
             const url = new URL(window.location);
             url.searchParams.delete('cadastro');

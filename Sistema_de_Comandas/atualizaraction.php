@@ -8,7 +8,7 @@
     }
     $sql = "UPDATE usuario SET nome = '" . $_POST['txtNome'] . "', senha = '" . $_POST['txtSenha'] . "', fk_tipo_usuario = '" . $_POST['txtTipoUsuario'] . "' WHERE id_usuario =" . $_POST['txtID'] . ";";
     if ($conexao->query($sql) === TRUE) {
-        echo ' <a href="listar.php"> <h1 class="w3-button w3-black">Usuário Atualizado com sucesso! </h1> </a> ';
+        header("Location: listar.php?atualizado=ok");
         $id = mysqli_insert_id($conexao);
     } else {
         echo ' <a href="listar.php"> <h1 class="w3-button w3-red">ERRO! </h1> </a> ';

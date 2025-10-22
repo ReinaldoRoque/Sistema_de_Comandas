@@ -1,3 +1,5 @@
+<!-- PAGINA DE VERIFICAÇÃO DE ACESSO DO USUÁRIO AO SISTEMA -->
+
 <?php if (!isset($_SESSION)) {
     session_start();
 }

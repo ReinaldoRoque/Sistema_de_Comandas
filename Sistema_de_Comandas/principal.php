@@ -1,3 +1,5 @@
+<!-- PAGINA PRINCIPAL DO SISTEMA -->
+
 <?php require_once('verificarAcesso.php'); ?>
 <?php require_once('cabecalho.php'); ?>
 <div class="w3-padding w3-text-grey w3-half w3-display-middle w3-center">

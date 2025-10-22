@@ -1,3 +1,5 @@
+<!-- PAGINA DE ACESSO NEGADO -->
+
 <?php require_once('cabecalho.php'); ?>
 <div class="w3-padding w3-content w3-text-grey w3-third w3-display-middle">
     <?php

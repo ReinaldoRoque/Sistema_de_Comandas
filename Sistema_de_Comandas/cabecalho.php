@@ -1,3 +1,5 @@
+<!-- PAGINA DE CABEÇALHO DO SISTEMA -->
+
 <?php $pagina_atual = basename($_SERVER['PHP_SELF']); ?>
 
 <!DOCTYPE html>

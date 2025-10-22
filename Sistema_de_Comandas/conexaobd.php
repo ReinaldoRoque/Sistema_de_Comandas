@@ -1,3 +1,5 @@
+<!-- PAGINA DE CONEXÃO COM O BANCO DE DADOS -->
+
 <?php
 $servername = "localhost";
 $username = "root";

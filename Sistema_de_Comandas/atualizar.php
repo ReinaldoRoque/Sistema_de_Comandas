@@ -1,3 +1,5 @@
+<!-- PAGINA DE ATUALIZAR CADASTRO DE USUÁRIO -->
+
 <?php require_once('verificarAcesso.php'); ?>
 <?php require_once('cabecalho.php'); ?>
 <a href="listar.php" class="w3-display-topleft w3-margin">
